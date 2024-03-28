@@ -5,7 +5,7 @@ import fs from 'fs';
 import pdfParse from 'pdf-parse';
 const upload = multer({ dest: '/tmp' }); // Temporarily save files to /tmp
 const handler = nextConnect();
-function processQA(text,name) {
+async function processQA(text,name) {
     // Pattern to match the question number followed by the question text, 
     // and then the answer options starting with letters.
     const qaPattern = /(\d+\..*?)(?=\d+\.|$)/gs;
@@ -42,7 +42,25 @@ function processQA(text,name) {
     const jsonData = JSON.stringify(qaList, null, 2);
   
     // Write the JSON string to a file
-    fs.writeFileSync('public/qa/'+name+'.json', jsonData, 'utf8');
+    // pages/api/uploadPDF.js
+
+    
+  
+    // Assuming you've processed the file and have the questions data
+     // Your logic to process the uploaded file
+  
+    try {
+        const { VercelKV, createClient } = require('@vercel/kv');
+        require('dotenv').config();
+        // Initialize Vercel KV with your namespace
+        const kv = new createClient({ url: process.env.KV_REST_API_URL,token:process.env.KV_REST_API_TOKEN });
+        await kv.set(name,jsonData)
+      
+    } catch (error) {
+      console.error('Error storing questions in Vercel KV:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  
   
     return qaList;
   }

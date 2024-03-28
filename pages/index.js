@@ -83,11 +83,17 @@ export default function Home() {
   const [selectedAnswers, setSelectedAnswers] = useState([]);
   const [correctness, setCorrectness] = useState({});
   const [,forceUpdate] = useState();
-  const fetchFiles = () => {
-    fetch('/api/list')
-      .then(res => res.json())
-      .then(setFiles);
-
+  const fetchFiles = async () => {
+    try {
+      const response = await fetch('/api/fetchFiles');
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const fileList = await response.json();
+      setFiles(fileList);
+    } catch (error) {
+      console.error('Failed to fetch files:', error);
+    }
   };
   function reloadComponent(){
     forceUpdate({})
