@@ -53,6 +53,10 @@ const styles = {
     color: '#4CAF50',
     fontWeight: 'bold',
   },
+  incorrectAnswer: {
+    color: '#FF0000',
+    fontWeight: 'bold',
+  },
   button: {
     padding: '10px 20px',
     margin: '10px',
@@ -76,6 +80,8 @@ export default function Home() {
   const [selectedFile, setSelectedFile] = useState('');
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedAnswers, setSelectedAnswers] = useState([]);
+  const [correctness, setCorrectness] = useState({});
 
   useEffect(() => {
     // Fetch the list of files
@@ -96,6 +102,7 @@ export default function Home() {
     }
   }, [selectedFile]);
 
+  
   // Function to handle random question selection
   const handleRandomQuestion = () => {
     if (questions.length > 0) {
@@ -111,7 +118,21 @@ const handleBackToFileSelection = () => {
   setQuestions([]); // Reset questions to an empty array
   setCurrentIndex(0); // Optionally reset the current index to 0
 };
-
+const handleAnswerSelect = (answer) => {
+  // Toggle the selected state of the answer
+  if (selectedAnswers.includes(answer)) {
+    setSelectedAnswers(selectedAnswers.filter(a => a !== answer));
+    // Remove the answer's correctness state if it's deselected
+    const updatedCorrectness = { ...correctness };
+    delete updatedCorrectness[answer];
+    setCorrectness(updatedCorrectness);
+  } else {
+    setSelectedAnswers([...selectedAnswers, answer]);
+    // Immediately check if the selected answer is correct and update the correctness state
+    const isCorrect = currentQA.correctAnswers.includes(answer);
+    setCorrectness({ ...correctness, [answer]: isCorrect });
+  }
+};
   // Ensure currentQA is defined before trying to access its properties
   const currentQA = questions && questions.length > 0 ? questions[currentIndex] : null;
 
@@ -130,24 +151,25 @@ const handleBackToFileSelection = () => {
           </ul>
         </div>
       )}
-
+  
       {currentQA ? (
         <>
           <div style={styles.question}>
             <h1>{currentQA.question}</h1>
           </div>
           <ul style={styles.answerList}>
-            {currentQA.answers.map((answer, index) => (
-              <li
-                key={index}
-                style={{
-                  ...styles.answerItem,
-                  ...(currentQA.correctAnswers.includes(answer) ? styles.correctAnswer : {}),
-                }}
-              >
-                {answer}
-              </li>
-            ))}
+          {currentQA.answers.map((answer, index) => (
+  <li
+    key={index}
+    style={{
+      ...styles.answerItem,
+      ...(correctness[answer] === true ? styles.correctAnswer : correctness[answer] === false ? styles.incorrectAnswer : {}),
+    }}
+    onClick={() => handleAnswerSelect(answer)}
+  >
+    {answer}
+  </li>
+))}
           </ul>
           <button
             onClick={() => setCurrentIndex(Math.max(currentIndex - 1, 0))}
@@ -166,7 +188,7 @@ const handleBackToFileSelection = () => {
           <button onClick={handleRandomQuestion} style={styles.button}>
             Random
           </button>
-          {/* Add a button for going back to file selection */}
+          {/* Button for going back to file selection */}
           <button onClick={handleBackToFileSelection} style={styles.button}>
             Back to Files
           </button>
@@ -176,4 +198,4 @@ const handleBackToFileSelection = () => {
       )}
     </div>
   );
-}
+      }
