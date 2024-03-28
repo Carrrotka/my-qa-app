@@ -64,6 +64,8 @@ handler.post(async (req, res) => {
     res.status(200);
   } catch (error) {
     console.error('Error parsing PDF:', error);
+    console.log(req.file.path)
+    console.error(req.file.path)
     res.status(500).send('Error parsing PDF');
   } finally {
     // Clean up: delete the temporarily saved file
