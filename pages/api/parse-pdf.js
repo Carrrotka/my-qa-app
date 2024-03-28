@@ -52,8 +52,8 @@ handler.use(upload.single('pdf'));
 
 handler.post(async (req, res) => {
   try {
-    const name = req.file.originalname.trim(".pdf")
-
+    const name = req.file.originalname.replace(".pdf","")
+    console.log(req.file.path)
     const pdfBuffer = fs.readFileSync(req.file.path);
     const data = await pdfParse(pdfBuffer);
     // Process data.text to extract questions and answers
