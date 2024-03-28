@@ -82,12 +82,39 @@ export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState([]);
   const [correctness, setCorrectness] = useState({});
-
-  useEffect(() => {
-    // Fetch the list of files
+  const [,forceUpdate] = useState();
+  const fetchFiles = () => {
     fetch('/api/list')
       .then(res => res.json())
       .then(setFiles);
+
+  };
+  function reloadComponent(){
+    forceUpdate({})
+  }
+  const uploadPDF = async () => {
+    const fileInput = document.getElementById('pdfUpload');
+    const file = fileInput.files[0];
+    if (file) {
+      const formData = new FormData();
+      formData.append('pdf', file);
+  
+      try {
+        const response = await fetch('/api/parse-pdf', {
+          method: 'POST',
+          body: formData,
+        });
+        const questions = await response.json();
+        console.log(questions); // Do something with the questions
+      } catch (error) {
+        console.error('Error uploading PDF:', error);
+      }
+    }
+    reloadComponent()
+  };
+  useEffect(() => {
+    // Fetch the list of files
+    fetchFiles();
   }, []);
 
   useEffect(() => {
@@ -149,6 +176,12 @@ const handleAnswerSelect = (answer) => {
               </li>
             ))}
           </ul>
+<div>
+  <input type="file" id="pdfUpload" accept="application/pdf" />
+  <button onClick={uploadPDF}>Upload PDF</button>
+  
+  
+</div>
         </div>
       )}
   
@@ -196,6 +229,9 @@ const handleAnswerSelect = (answer) => {
       ) : (
         <p>No questions available or selected question set is empty.</p>
       )}
+
+      
     </div>
+    
   );
       }
