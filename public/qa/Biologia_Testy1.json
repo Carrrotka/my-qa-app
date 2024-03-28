@@ -1,0 +1,448 @@
+[
+  {
+    "question": "1. Veda, ktorá skúma formy živých sústav, ich vlastnosti a procesy v nich prebiehajúce je: ",
+    "answers": [
+      "a) histológia",
+      "b) fyziológia",
+      "c) biológia",
+      "d) imunológia"
+    ],
+    "correctAnswers": [
+      "c) biológia"
+    ]
+  },
+  {
+    "question": "2. Teóriu samoplodenia vytvoril: ",
+    "answers": [
+      "a) Darwin",
+      "b) Avicena",
+      "c) Demokritos",
+      "d) Aristoteles"
+    ],
+    "correctAnswers": [
+      "d) Aristoteles"
+    ]
+  },
+  {
+    "question": "3. Štruktúru molekuly DNA sa podarilo objasniť v roku: ",
+    "answers": [
+      "a) 1853",
+      "b) 1953",
+      "c) 1956",
+      "d) 1954"
+    ],
+    "correctAnswers": [
+      "b) 1953"
+    ]
+  },
+  {
+    "question": "4. Veda o vyhynutých organizmoch je: ",
+    "answers": [
+      "a) paleografia",
+      "b) splentológia",
+      "c) antropológia",
+      "d) paleontológia"
+    ],
+    "correctAnswers": [
+      "d) paleontológia"
+    ]
+  },
+  {
+    "question": "5. Premenu druhov a postupnosti o vývoji neuznávali: ",
+    "answers": [
+      "a) Lamarck a Linné",
+      "b) Darwin a Cuvier",
+      "c) Linné a Cuvier",
+      "d) Lamarck a Cuvier"
+    ],
+    "correctAnswers": [
+      "c) Linné a Cuvier"
+    ]
+  },
+  {
+    "question": "6. Ako prvý vysvetlil krvný obeh u človeka: ",
+    "answers": [
+      "a) Purkyně",
+      "b) Vesalius",
+      "c) Harvey",
+      "d) Plinius st."
+    ],
+    "correctAnswers": [
+      "c) Harvey"
+    ]
+  },
+  {
+    "question": "7. Objaviteľom základných zákonov prenosu vlôh je: ",
+    "answers": [
+      "a) Oparin",
+      "b) Darwin",
+      "c) Mendel",
+      "d) Crick"
+    ],
+    "correctAnswers": [
+      "c) Mendel"
+    ]
+  },
+  {
+    "question": "8. Aby  sa  overila  pravdivosť  experimentu  a vylúčila  jeho  akákoľvek  náhodnosť,  sa ",
+    "answers": [
+      "experiment musí opakovať najmenej:",
+      "",
+      "a) 4 – krát",
+      "b) 2 – krát",
+      "c) 3 – krát",
+      "d) 5 – krát"
+    ],
+    "correctAnswers": [
+      "c) 3 – krát"
+    ]
+  },
+  {
+    "question": "9. Najstaršia a najčastejšie používaná vedecká metóda v biológii je: ",
+    "answers": [
+      "a) opis",
+      "b) dedukcia",
+      "c) pozorovanie",
+      "d) pokus"
+    ],
+    "correctAnswers": [
+      "c) pozorovanie"
+    ]
+  },
+  {
+    "question": "10. Teórie sa vzťahujú na: ",
+    "answers": [
+      "a) jeden jav",
+      "b) tri experimenty",
+      "c) viac javov",
+      "d) na overenú hypotézu"
+    ],
+    "correctAnswers": [
+      "c) viac javov"
+    ]
+  },
+  {
+    "question": "11. Že život na našej planéte vznikol z neživej prírody predpokladá teória: ",
+    "answers": [
+      "a) fylogenézy",
+      "b) Darwinova",
+      "c) Oparinova",
+      "d) Buffonova"
+    ],
+    "correctAnswers": [
+      "c) Oparinova"
+    ]
+  },
+  {
+    "question": "12. Z hľadiska štruktúry živých systémov vírusy sú: ",
+    "answers": [
+      "a) nebunkové organizmy",
+      "b)  zložené z DNA a RNA",
+      "c) nukleoproteínové častice",
+      "d) všetky obalené tukovým obalom"
+    ],
+    "correctAnswers": [
+      "a) nebunkové organizmy",
+      "c) nukleoproteínové častice"
+    ]
+  },
+  {
+    "question": "13. Pri rozmnožovaní vírusov na povrchu hostiteľskej bunky sa jedná o: ",
+    "answers": [
+      "a) jednu fázu",
+      "b) dve fázy",
+      "c) tri fázy",
+      "d) štyri fázy"
+    ],
+    "correctAnswers": [
+      "d) štyri fázy"
+    ]
+  },
+  {
+    "question": "14. Rozvetvené, vláknité štruktúry baktérií tvorí skupina: ",
+    "answers": [
+      "a) aktinomycéty",
+      "b) bacily",
+      "c) koky",
+      "d) spirochéty"
+    ],
+    "correctAnswers": [
+      "a) aktinomycéty"
+    ]
+  },
+  {
+    "question": "15. Väčšina baktérií sa rozmnožuje: ",
+    "answers": [
+      "a) rozpadom svojich vláken",
+      "b) pučaním",
+      "c) vytváraním spór",
+      "d) priečnym delením"
+    ],
+    "correctAnswers": [
+      "d) priečnym delením"
+    ]
+  },
+  {
+    "question": "16. Medzi pôvodcov respiračných infekcií nepatria zástupcovia rodu: ",
+    "answers": [
+      "a) Salmonella",
+      "",
+      "b) Klebsiella",
+      "c) Streptococcus",
+      "d) Mycobacterium tuberculosis"
+    ],
+    "correctAnswers": [
+      "a) Salmonella"
+    ]
+  },
+  {
+    "question": "17. Pre kvasinky je typickým rozmnožovaním: ",
+    "answers": [
+      "a) pučanie",
+      "b) replikácia",
+      "c) rozpad",
+      "d) vytváranie spór"
+    ],
+    "correctAnswers": [
+      "a) pučanie"
+    ]
+  },
+  {
+    "question": "18. Vo veľmi kyslých a pritom aj horúcich vodách sú schopné existovať: ",
+    "answers": [
+      "a) metanoarcheóny",
+      "b) termoarcheóny",
+      "c) haloarcheóny",
+      "d) probioarceóny"
+    ],
+    "correctAnswers": [
+      "b) termoarcheóny"
+    ]
+  },
+  {
+    "question": "19.Za zakladateľa botaniky sa považuje: ",
+    "answers": [
+      "a. Linné",
+      "b. Lamarck",
+      "c. Theofrastos",
+      "d. Galen"
+    ],
+    "correctAnswers": [
+      "c. Theofrastos"
+    ]
+  },
+  {
+    "question": "20. Štruktúru buniek, ich tvar a bunkové organely skúma: ",
+    "answers": [
+      "a. anatómia",
+      "b. všeobecná biológia",
+      "c. imunológia",
+      "d. cytológia"
+    ],
+    "correctAnswers": [
+      "d. cytológia"
+    ]
+  },
+  {
+    "question": "21. Pojem prvého autorstva pojmu „biológia“ sa okrem Lamarcka pripisuje aj: ",
+    "answers": [
+      "a. Darwinovi",
+      "b. Linnému",
+      "c. Trevinarovi",
+      "d. Theofrastovi"
+    ],
+    "correctAnswers": [
+      "c. Trevinarovi"
+    ]
+  },
+  {
+    "question": "22. Pre bunky húb nie je charakteristické: ",
+    "answers": [
+      "a. obsahujú v svojej stene chitín",
+      "b. obsahujú v svojej stene glykogén",
+      "c. sú často súčasťou dlhých vlákien, ktoré sa nazývajú hýfy",
+      "d. obsahujú plastidy"
+    ],
+    "correctAnswers": [
+      "d. obsahujú plastidy"
+    ]
+  },
+  {
+    "question": "23. Hrdza trávna patrí medzi: ",
+    "answers": [
+      "a. čiaškotvaré huby",
+      "b. vreckaté huby",
+      "c. bazídiové huby",
+      "d. paplesňotvaré huby"
+    ],
+    "correctAnswers": [
+      "c. bazídiové huby"
+    ]
+  },
+  {
+    "question": "24. Smrčok jedlý patrí do radu: ",
+    "answers": [
+      "a. rôznotvaré huby",
+      "b. Agaricales",
+      "",
+      "c. Clavicipitales",
+      "d. Pezizales"
+    ],
+    "correctAnswers": [
+      "d. Pezizales"
+    ]
+  },
+  {
+    "question": "25. Prvú ucelenú teóriu o evolúcii sformuloval: ",
+    "answers": [
+      "a. Aristoteles",
+      "b. Purkyně",
+      "c. Darwin",
+      "d. Lamarck"
+    ],
+    "correctAnswers": [
+      "d. Lamarck"
+    ]
+  },
+  {
+    "question": "26. Zakladateľom bunkovej teórie nie je: ",
+    "answers": [
+      "a. Schleiden",
+      "b. Purkyně",
+      "c. Leeuwenhoek",
+      "d. Schwannanie"
+    ],
+    "correctAnswers": [
+      "c. Leeuwenhoek"
+    ]
+  },
+  {
+    "question": "27. Základnou podmienkou akéhokoľvek vedeckého pokusu v biológii je: ",
+    "answers": [
+      "a. pozorovanie",
+      "b. experiment",
+      "c. vedecký zákon",
+      "d. opakovateľnosť"
+    ],
+    "correctAnswers": [
+      "d. opakovateľnosť"
+    ]
+  },
+  {
+    "question": "28. Myšlienku, že každá bunka vzniká z bunky „Omnis celula e celula“ potvrdil: ",
+    "answers": [
+      "a. Grew",
+      "b. Virchow",
+      "c. Hooke",
+      "d. Brown"
+    ],
+    "correctAnswers": [
+      "b. Virchow"
+    ]
+  },
+  {
+    "question": "29. Mykoríza je: ",
+    "answers": [
+      "a. symbióza húb s baktériami",
+      "b. symbióza siníc a rias",
+      "c. nasadenie parazita na cudzopasiacu hubu",
+      "d. symbióza húb s koreňmi vyšších rastlín"
+    ],
+    "correctAnswers": [
+      "d. symbióza húb s koreňmi vyšších rastlín"
+    ]
+  },
+  {
+    "question": "30. Stielka húb: ",
+    "answers": [
+      "a. obsahuje plastidy – chromoplasty",
+      "b. môže byť vláknitá",
+      "c. nemôže byť vláknitá",
+      "d. neobsahuje chitín"
+    ],
+    "correctAnswers": [
+      "b. môže byť vláknitá"
+    ]
+  },
+  {
+    "question": "31. K jedovatým druhom húb patria: ",
+    "answers": [
+      "a. kozáky",
+      "b. bedle",
+      "c. ušiak obyčajný",
+      "d. plávky"
+    ],
+    "correctAnswers": [
+      "c. ušiak obyčajný"
+    ]
+  },
+  {
+    "question": "32. Rad kvasinkotvaré patrí do triedy: ",
+    "answers": [
+      "a. spájavé plesne",
+      "b. Zygomycetes",
+      "",
+      "c.  Ascomycetes",
+      "d. spájavé huby"
+    ],
+    "correctAnswers": [
+      "c.  Ascomycetes"
+    ]
+  },
+  {
+    "question": "33. Medzi čiaškotvaré huby patrí: ",
+    "answers": [
+      "a. Kvasinka vínna",
+      "b. Aspergil čierny",
+      "c. Kyjanička purpurová",
+      "d. Smrčok jedlý"
+    ],
+    "correctAnswers": [
+      "d. Smrčok jedlý"
+    ]
+  },
+  {
+    "question": "34. Tenká vrstvička, ktorú u húb vytvárajú bazídiá alebo vrecka sa nazýva: ",
+    "answers": [
+      "a. askospóry",
+      "b. hymenium",
+      "c. bazídiospóry",
+      "d. sporangiofory"
+    ],
+    "correctAnswers": [
+      "b. hymenium"
+    ]
+  },
+  {
+    "question": "35. Medzi bazídiové huby patrí: ",
+    "answers": [
+      "a. hríb",
+      "b. kozák",
+      "c. masliak"
+    ],
+    "correctAnswers": []
+  },
+  {
+    "question": "36. Medzi pečiarkovité patrí: ",
+    "answers": [
+      "a. rýdzik",
+      "b. hliva",
+      "c. kuriatko"
+    ],
+    "correctAnswers": [
+      "a. rýdzik"
+    ]
+  },
+  {
+    "question": "37. Bunkové jadro prokaryotov: ",
+    "answers": [
+      "a. je oddelené jadrovou membránou",
+      "b. nie je oddelené jadrovou membránou",
+      "c. má dva obaly",
+      "d. nazýva sa nukleotid"
+    ],
+    "correctAnswers": [
+      "b. nie je oddelené jadrovou membránou"
+    ]
+  }
+]
